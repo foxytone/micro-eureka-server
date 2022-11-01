@@ -1,0 +1,11 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-server
+  config:
+    import: configserver:http://localhost:8071
